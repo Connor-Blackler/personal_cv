@@ -61,7 +61,8 @@ async def fetch_repo_detail(session, repo, headers):
             file_content = json.loads(file_content)
             return {
                 'repo': repo,
-                'file_content': file_content
+                'file_content': file_content,
+                'url': f"https://api.github.com/repos/{github_username}/{repo}"
             }
 
 

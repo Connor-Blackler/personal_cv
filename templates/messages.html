@@ -1,0 +1,32 @@
+{% load static %}
+
+<style>
+.messages-small-mode {
+    margin-top: 60px;
+}
+
+@media only screen and (min-width: 1120px) {
+    .messages-small-mode {
+        margin-top: 0px;
+    }
+}
+
+.fade-in-message { 
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+</style>
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert messages-small-mode alert-{{message.tags}} alert-dismissible fade show fade-in-message" role="alert">
+        {{message}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            </button>
+        </div>
+    {% endfor %}
+{% endif %}
