@@ -1,6 +1,6 @@
 {
 	"title": "My Personal Website",
-	"image": "https://www.clipartmax.com/png/small/296-2969961_no-image-user-profile-icon.png",
+	"image": "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
 	"description": "The Django app that produced this website! Uses Docker to automate these thumbnails and populates the models, uses github API and clones each repo and searches for specific files, added manage.py 'scrape' command",
 	"language": ["Python","Django", "Docker"],
 	"language_bg": ["#3572A5","#103E2E", "#2496ED"]
