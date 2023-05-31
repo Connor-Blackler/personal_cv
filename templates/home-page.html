@@ -5,34 +5,34 @@
 <main>
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
-      {% for repo in repos %}
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <a href="{{ repo.url }}" class="link-unstyled">
-               <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light"> 
-                <div class="card shadow-sm">
-                  <div max-height="225px">
-                    <image src="{{ repo.image }}" style="max-width:100%; max-height:100%;"></image>
-                    <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-text">{{ repo.title }}</h5>
-                    <p class="card-text">{{ repo.description }}</p>
-                    {% for language in repo.languages.all %}
-                      <button class="btn btn-primary rounded-pill px-1" style="background-color: {{ language.color }}; border-color: {{ language.color }};" type="button">
-                        {{ language.title }}
-                      </button>
-                    {% endfor %}
-                  </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {% for repo in repos %}
+        <div class="col">
+          <a href="{{ repo.url }}" class="link-unstyled">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+              <div class="card shadow-sm">
+                <div class="card-img-top" style="max-height: 100%; overflow: hidden;">
+                  <img src="{{ repo.image }}" alt="Repo Image" style="max-width:100%; max-height:100%; object-fit: contain;">
                 </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{ repo.title }}</h5>
+                  <p class="card-text">{{ repo.description }}</p>
+                  {% for language in repo.languages.all %}
+                  <button class="btn btn-primary rounded-pill px-1" style="background-color: {{ language.color }}; border-color: {{ language.color }};" type="button">
+                    {{ language.title }}
+                  </button>
+                  {% endfor %}
                 </div>
-              </a>
+              </div>
             </div>
-          </div>
+          </a>
+        </div>
         {% endfor %}
+      </div>
     </div>
   </div>
 </main>
+
 
 {% block styles %}
 <style>
