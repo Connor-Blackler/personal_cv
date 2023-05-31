@@ -1,7 +1,7 @@
 {
-	"title": "My Personal website portfolio",
-	"image": "https://cdn.icon-icons.com/icons2/217/PNG/512/user-blue_25325.png",
-	"description": "The Django app that produced this website! Uses Docker to automate these thumbnails and populates the models, uses github API and clonse the repos and searches for specific files, added manage.py command",
+	"title": "My Personal Website",
+	"image": "https://www.clipartmax.com/png/small/296-2969961_no-image-user-profile-icon.png",
+	"description": "The Django app that produced this website! Uses Docker to automate these thumbnails and populates the models, uses github API and clones each repo and searches for specific files, added manage.py 'scrape' command",
 	"language": ["Python","Django", "Docker"],
 	"language_bg": ["#3572A5","#103E2E", "#2496ED"]
 }
