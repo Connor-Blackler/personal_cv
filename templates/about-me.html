@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+    <section class="py-5 pb-0 text-center container shadow p-3 mb-5 bg-white rounded">
+        <div class="row py-lg-5 pb-0">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Welcome to About Me</h1>
+                <p class="lead text-body-secondary">Here you will find extra information for you to gain more knowledge of who I am, my hobbies, and other parts of my day to day.</p>
+                <p class="lead text-body-secondary">You can also find a list of my current projects, as well as my education in more detail using the buttons below.</p>
+                <p>
+                <a href="{% url 'home' %}" class="btn btn-secondary my-2">Projects</a>
+                <a href="{% url 'education' %}" class="btn btn-secondary my-2">Education</a>
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% block styles %}
+<style>
+
+</style>
+{% endblock %}
+{% endblock %}
