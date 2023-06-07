@@ -163,4 +163,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', default='').split(
-    ' ') + ['www.connorblackler.com', "127.0.0.1"]
+    ' ') + ['.connorblackler.com', "127.0.0.1"]
