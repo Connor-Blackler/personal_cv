@@ -1,0 +1,21 @@
+.link-unstyled {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.link-unstyled:hover {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.card-img-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 225px;
+  overflow: hidden;
+}
+
+.card {
+  height: 100%;
+}
